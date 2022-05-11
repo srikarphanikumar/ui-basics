@@ -13,7 +13,7 @@ h1 {
 }
 
 .page-heading {
-  color: blue;
+  color: aqua;
   background-color: darkgoldenrod;
 }
 
@@ -32,16 +32,16 @@ h1 {
   */
   border: 1px solid red;
   /* Margin: 
-      Will move the whole body in the required direction
+    Will move the whole body in the required direction
 
-      Margin: Can take negative values
-      
-      TRBL Method (top,  right, bottom, left)
-      margin: 10px 20px 15px 25px; (top,  right, bottom, left)
-      margin : 25px 10px 15px 20px. (all sides)
-      margin: 15px 10px 20px. (top right&left bottom)
-      margin: 15px 10px. (top&bottom right&left).
-    */
+    Margin: Can take negative values
+    
+    TRBL Method (top,  right, bottom, left)
+    margin: 10px 20px 15px 25px; (top,  right, bottom, left)
+    margin : 25px 10px 15px 20px. (all sides)
+    margin: 15px 10px 20px. (top right&left bottom)
+    margin: 15px 10px. (top&bottom right&left).
+  */
   margin: 10px;
 
   /* Padding: 
@@ -68,7 +68,6 @@ h1 {
   padding-left: 10px;
   margin-top: 20px;
 }
-
 
 .empty-div {
   height: 400px;
