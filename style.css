@@ -1,0 +1,105 @@
+* {
+  background-color: white;
+}
+
+/* ID has the highest preference, followed by class, followed by selector */
+h1 {
+  /* Text color styles: color */
+  color: red;
+}
+
+#h1-id {
+  color: green;
+}
+
+.page-heading {
+  color: blue;
+  background-color: darkgoldenrod;
+}
+
+.font-style-class {
+  font-style: italic;
+}
+
+.small-div {
+  background-color: antiquewhite;
+  color: brown;
+  /* Border Syntax
+    border: thicknessInPx solid/dashed/dotted color
+
+    You can also specify which border you want using: 
+    border-top, border-bottom, border-right & border-left
+  */
+  border: 1px solid red;
+  /* Margin: 
+      Will move the whole body in the required direction
+
+      Margin: Can take negative values
+      
+      TRBL Method (top,  right, bottom, left)
+      margin: 10px 20px 15px 25px; (top,  right, bottom, left)
+      margin : 25px 10px 15px 20px. (all sides)
+      margin: 15px 10px 20px. (top right&left bottom)
+      margin: 15px 10px. (top&bottom right&left).
+    */
+  margin: 10px;
+
+  /* Padding: 
+    Will move the whole body inside div/section
+
+    Padding: CANNOT take negative values
+    
+    TRBL Method (top,  right, bottom, left)
+    padding: 10px 20px 15px 25px; (top,  right, bottom, left)
+    padding : 25px 10px 15px 20px. (all sides)
+    padding: 15px 10px 20px. (top right&left bottom)
+    padding: 15px 10px. (top&bottom right&left).
+  */
+  padding: 10px;
+
+  /* VERY IMPORTANT: CSS BOX MODEL: Margin > border > padding > actual-content */
+}
+
+.second-div {
+  background-color: black !important;
+  color: black;
+  border: 5px dotted brown;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+
+.empty-div {
+  height: 400px;
+  width: 400px;
+  border: 2px solid blue;
+  background-color: aquamarine;
+  margin: 40px;
+}
+
+.google-image {
+  height: 20px;
+  width: 20px;
+}
+
+.links {
+  display: grid;
+  /* margin-bottom: 100px; */
+}
+
+.border {
+  border: 3px solid blueviolet;
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+.bold {
+  font-weight: bold;
+}
