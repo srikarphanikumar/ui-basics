@@ -9,112 +9,204 @@
   </head>
   <body>
     <script src="index.js"></script>
-    <!-- Basic Tags -->
-    <!-- Header Tags (Level 1 - level 6) -->
-    <h1 class="page-heading font-style-class" id="h1-id">HTML Basics</h1>
-    <h2 id="h2-id">HTML Basics</h2>
-    <h3 id="h3-id">HTML Basics</h3>
-    <h4 id="h4-id">HTML Basics</h4>
-    <h5 id="h5-id" >HTML Basics</h5>
-    <h6 id="h6-id">HTML Basics</h6>
 
-    <!-- Paragraphs -->
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sint
-      dolorum temporibus distinctio beatae autem pariatur tempora veritatis
-      quae? <span class="bold">Iure voluptatum earum</span> at voluptatem commodi quibusdam eius
-      repudiandae aliquid quisquam.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sint
-      dolorum temporibus distinctio beatae autem pariatur tempora veritatis
-      quae? Iure voluptatum earum at voluptatem commodi quibusdam eius
-      repudiandae aliquid quisquam.
-      <strong>Strong / Bold</strong> ipsum dolor sit amet consectetur adipisicing elit. Corporis sint
-      dolorum <strong><i>Italic</i></strong> distinctio beatae autem pariatur tempora veritatis
-      quae? Iure voluptatum earum at voluptatem commodi quibusdam eius
-      repudiandae aliquid quisquam.
-    </p>
+    <!-- Forms & form-elements -->
+    <h2>Forms</h2>
+    <div class="border forms">
+      <form>
+        
+        <fieldset class="margin-padding">
+          <legend>Names and details</legend>
+          <!-- input: type = text -->
+          <label for="fname">First name:</label>
+          <input 
+            type="text" 
+            minlength="3" 
+            maxlength="4" 
+            id="firstname" 
+            name="firstname"
+          ><br><br>
+  
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName"><br><br>
+  
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address"><br><br>
+        </fieldset>
 
-    <!-- Div -->
-    <div class="small-div font-style-class">
-      <h1>Inner Heading</h1>
-      DIV: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-      sint dolorum temporibus distinctio beatae autem pariatur tempora veritatis
-      quae? Iure voluptatum earum at voluptatem commodi quibusdam eius
-      repudiandae aliquid quisquam.
+        <fieldset class="margin-padding">
+          <legend>Password, File and Number types</legend>
+          <!-- input type = password -->
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"><br><br>
+  
+          <!-- Input type = file with acceptable types and multiple attribute -->
+          <label for="file">file:</label>
+          <input 
+            type="file" 
+            id="file" 
+            name="file" 
+            accept="image/*" 
+            multiple
+          ><br><br>
+          
+          <!-- Input type = number -->
+          <label for="number">number:</label>
+          <input type="number" id="number" name="number"><br><br>
+        </fieldset>
+
+        
+        <!-- Input type = date -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <!-- Input type = month -->
+        <label for="month">Month:</label>
+        <input type="month" id="month" name="month"><br><br>
+        
+        <!-- Input type = radio -->
+        <p>Radio button options</p>
+        <label for="one">One:</label>
+        <input type="radio" id="one" name="one"><br><br>
+
+        <label for="two">two:</label>
+        <input type="radio" id="two" name="two"><br><br>
+
+        <label for="three">three:</label>
+        <input type="radio" id="three" name="three"><br><br>
+
+        <!-- Select / Dropdown -->
+        <label for="cars">Choose a car:</label>
+
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select><br><br>
+
+        <!-- Text area -->
+        <label for="text-area-example">Text area example</label>
+
+        <textarea id="text-area-example" name="text-area-example" rows="4" cols="50">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, ab! 
+          Facilis velit expedita error, mollitia necessitatibus blanditiis 
+          eligendi impedit. Dignissimos minus culpa odit debitis ex ipsam 
+          harum blanditiis, modi adipisci!
+        </textarea>
+
+      </form>
     </div>
-    <div class="second-div">
-      <h2 class="second-div-h2">Inner Heading</h2>
-      <p class="second-div-p">
+
+    <!-- If you want to see the below HTML in the server, remove class d-none -->
+    <div class="d-none">
+      <!-- Basic Tags -->
+      <!-- Header Tags (Level 1 - level 6) -->
+      <h1 class="page-heading font-style-class" id="h1-id">HTML Basics</h1>
+      <h2 id="h2-id">HTML Basics</h2>
+      <h3 id="h3-id">HTML Basics</h3>
+      <h4 id="h4-id">HTML Basics</h4>
+      <h5 id="h5-id">HTML Basics</h5>
+      <h6 id="h6-id">HTML Basics</h6>
+
+      <!-- Paragraphs -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sint
+        dolorum temporibus distinctio beatae autem pariatur tempora veritatis
+        quae? <span class="bold">Iure voluptatum earum</span> at voluptatem
+        commodi quibusdam eius repudiandae aliquid quisquam. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Corporis sint dolorum temporibus
+        distinctio beatae autem pariatur tempora veritatis quae? Iure voluptatum
+        earum at voluptatem commodi quibusdam eius repudiandae aliquid quisquam.
+        <strong>Strong / Bold</strong> ipsum dolor sit amet consectetur
+        adipisicing elit. Corporis sint dolorum
+        <strong><i>Italic</i></strong> distinctio beatae autem pariatur tempora
+        veritatis quae? Iure voluptatum earum at voluptatem commodi quibusdam
+        eius repudiandae aliquid quisquam.
+      </p>
+
+      <!-- Div -->
+      <div class="small-div font-style-class">
+        <h1>Inner Heading</h1>
         DIV: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
         sint dolorum temporibus distinctio beatae autem pariatur tempora
         veritatis quae? Iure voluptatum earum at voluptatem commodi quibusdam
         eius repudiandae aliquid quisquam.
-      </p>
-    </div>
+      </div>
+      <div class="second-div">
+        <h2 class="second-div-h2">Inner Heading</h2>
+        <p class="second-div-p">
+          DIV: Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          sint dolorum temporibus distinctio beatae autem pariatur tempora
+          veritatis quae? Iure voluptatum earum at voluptatem commodi quibusdam
+          eius repudiandae aliquid quisquam.
+        </p>
+      </div>
 
-    <!-- Sections -->
-    <section>
-      <p class="bold">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sint
-        dolorum temporibus distinctio beatae autem pariatur tempora veritatis
-        quae? Iure voluptatum earum at voluptatem commodi quibusdam eius
-        repudiandae aliquid quisquam.
-      </p>
-    </section>
+      <!-- Sections -->
+      <section>
+        <p class="bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sint
+          dolorum temporibus distinctio beatae autem pariatur tempora veritatis
+          quae? Iure voluptatum earum at voluptatem commodi quibusdam eius
+          repudiandae aliquid quisquam.
+        </p>
+      </section>
 
-    <!-- LISTS -->
-    <div class="border font-style-class">
-      <!-- UNORDERED LISTS -->
-      <h3>LISTS</h3>
-      <h4>Un-ordered Lists</h4>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
-        <li>Item 1</li>
-      </ul>
+      <!-- LISTS -->
+      <div class="border font-style-class">
+        <!-- UNORDERED LISTS -->
+        <h3>LISTS</h3>
+        <h4>Un-ordered Lists</h4>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 1</li>
+          <li>Item 1</li>
+          <li>Item 1</li>
+        </ul>
 
-      <!-- ORDERRED LISTS -->
-      <h4>Ordered Lists</h4>
-      <ol>
-        <li>Item a</li>
-        <li>Item b</li>
-        <li>Item c</li>
-        <li>Item d</li>
-      </ol>
-    </div>
+        <!-- ORDERRED LISTS -->
+        <h4>Ordered Lists</h4>
+        <ol>
+          <li>Item a</li>
+          <li>Item b</li>
+          <li>Item c</li>
+          <li>Item d</li>
+        </ol>
+      </div>
 
-    <!-- 
+      <!-- 
       Anchor Tags (also called links)
       href: WHERE TO GO (link address / bookmark address)
       target: "_blank" Will open in a new page
       (target: "_self" or no target attribute) will open in the same page
     -->
-    <div>
-      <a href="https://www.google.com" target="_blank"> Go to google.com </a>
+      <div>
+        <a href="https://www.google.com" target="_blank"> Go to google.com </a>
 
-      <a href="https://www.google.com" target="_blank">
-        <img
-          src="/images/google-image.jpg"
-          alt="Google Image"
-          class="google-image"
-        />
-        Click Here to go to google
-      </a>
-    </div>
-    <a href="https://www.microsoft.com" target="_self"> Go to microsoft</a>
+        <a href="https://www.google.com" target="_blank">
+          <img
+            src="/images/google-image.jpg"
+            alt="Google Image"
+            class="google-image"
+          />
+          Click Here to go to google
+        </a>
+      </div>
+      <a href="https://www.microsoft.com" target="_self"> Go to microsoft</a>
 
-    <!-- Image Tags -->
-    <img src="/images/google-image.jpg" alt="Google Image" />
+      <!-- Image Tags -->
+      <img src="/images/google-image.jpg" alt="Google Image" />
 
-    <!-- BOOKMARKS -->
-    <!-- <div class="empty-div"></div> -->
+      <!-- BOOKMARKS -->
+      <!-- <div class="empty-div"></div> -->
 
-    <div class="links">
-      <a href="#h1-id">Go to H1</a>
-      <a href="#h2-id">Go to H2</a>
-      <a href="#h3-id">Go to H3</a>
-      <a href="#h4-id">Go to H4</a>
+      <div class="links">
+        <a href="#h1-id">Go to H1</a>
+        <a href="#h2-id">Go to H2</a>
+        <a href="#h3-id">Go to H3</a>
+        <a href="#h4-id">Go to H4</a>
+      </div>
     </div>
   </body>
 </html>
