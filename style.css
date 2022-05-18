@@ -22,6 +22,15 @@ h1 {
   padding: 10px;
 }
 
+.reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}
+
+.set-border {
+  border: 4px dotted red;
+}
+
 /* Forms classes */
 .forms {
   margin: 10px;
