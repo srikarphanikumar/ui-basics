@@ -16,6 +16,11 @@ console.log('******************************');
  * 7. null 
 */
 
+/**
+ * SPECIAL CHARACTERS:
+ * /t = tab
+ * /n = new line
+ */
 
 /** 
  * Strings
@@ -30,6 +35,10 @@ console.log('******************************');
  * .toLowerCase(),
  * .toLocaleLowerCase(),
  * .concat()
+ * .split()
+ * .join()
+ * .splice()
+ * .slice()
  */
 var str1 = 'long word';
 // console.log('str1: ', str1);
@@ -163,15 +172,15 @@ console.log('Num5: ', num5)
 
 // add
 var add = num1 + num2 + num3;
-console.log('Addition result of num1, num2 & num3 ==>', add);
+// console.log('Addition result of num1, num2 & num3 ==>', add);
 
 // sub
 var sub = num1-num2-num3;
-console.log('Subtraction result of num1 & num2 ==>', sub);
+// console.log('Subtraction result of num1 & num2 ==>', sub);
 
 // multiplication
 var product = num1 * num2 * num3;
-console.log('Multiplication result of num1, num2 & num3 ==>', product);
+// console.log('Multiplication result of num1, num2 & num3 ==>', product);
 
 // division
 /**
@@ -197,23 +206,23 @@ console.log('Multiplication result of num1, num2 & num3 ==>', product);
  * 
  */
 var divisionResult = num3 / num2;
-console.log('Division result of num3 / num2 ==>', divisionResult);
+// console.log('Division result of num3 / num2 ==>', divisionResult);
 
 var remainder = num3 % num2;
-console.log('remainder result of num3 % num2 ==>', remainder);
+// console.log('remainder result of num3 % num2 ==>', remainder);
 
 var remainder2 = num3 % num1;
-console.log('remainder2 result of num3 % num2 ==>', remainder2);
+// console.log('remainder2 result of num3 % num2 ==>', remainder2);
 
 var remainder3 = num5 % num4;
-console.log('remainder3 result of num5 % num4 ==>', remainder3);
+// console.log('remainder3 result of num5 % num4 ==>', remainder3);
 
 function isEvenOrNot(num) {
     return num % 2 == 0;
 }
 
-console.log('isEvenOrNot for 4:', isEvenOrNot(4));
-console.log('isEvenOrNot for 5:', isEvenOrNot(5));
+// console.log('isEvenOrNot for 4:', isEvenOrNot(4));
+// console.log('isEvenOrNot for 5:', isEvenOrNot(5));
 
 // Different ways of operating;
 // var add2 = add + 1;
@@ -221,9 +230,9 @@ add += 1; // this is equal to add = add + 1;
 sub -= 1; // this is equal to sub = sub - 1;
 product *= 2; // this is equal to product = product * 2;
 
-console.log('Add Final Value: ', add);
-console.log('sub Final Value: ', sub);
-console.log('product Final Value: ', product);
+// console.log('Add Final Value: ', add);
+// console.log('sub Final Value: ', sub);
+// console.log('product Final Value: ', product);
 
 /** Reserved Words: var, let, const, function */
 
@@ -293,3 +302,114 @@ var sum = addAny2Values(3, 4);
 var sumWithStrs = addAny2Values('srikar', 4)
 // console.log('SumWithStrs =>', sumWithStrs);
 
+
+// PARSEINT() returns only wholeNumber
+/**
+ * Number bases: 
+ * Base 2 : Binary numbers (Total numbers in this system = 2 (which are 0 & 1))
+ * Base 8: Octal
+ * Base 10: Decimal / regular numbers (Total numbers in this system = 10 (which are 0 to 9))
+ * Base 16: Hex (Total numbers in this system = 16)
+ */
+
+
+// Homework: Convert Dec-hex, dec-octal, hex-decimal, octal-decimal
+
+/**
+ * Base 2 conversion: 
+ * Eg: Decimal to Binary conversion of number 4
+ * (write in descending order in powers of 2)
+ * ------------------
+ * 2^3 2^2 2^1 2^0
+ * 
+ * 8    4   2    1
+ * 0    1   0    0  (0100 / 100 in base-2) = 4 in Base-10
+ * ------------------
+ * 
+ * 
+ * Eg: 5
+ * ------------------
+ * 2^2 2^1 2^0
+ *  |   |    |
+ *  4   2    1
+ *  1   0    1      5 in Base-10 = 101 in base-2
+ * ------------------
+ * 
+ * 
+ * Eg: 20
+ * ------------------
+ * 2^4 2^3 2^2 2^1 2^0
+ *  |   |   |   |    |
+ *  16  8   4   2    1
+ *  1   0   1   0    0  20 in base-10 = 10100 in base-2
+ * ------------------
+ * 
+ * Eg: 50
+ * ------------------
+ * 2^5 2^4 2^3 2^2 2^1 2^0
+ *  |   |   |   |   |    |
+ *  32  16  8   4   2    1
+ *  1    1   0   0  1    0  50 in base-10 = 110010 in base-2
+ * ------------------
+ * 
+ * 
+ * 
+ * BINARY TO DECIMAL CONVERSION
+ * 
+ * Eg: 110011100 in base-2
+ * 
+ * Write all numbers seperately
+ * 
+ * 8     7     6     5     4    3    2    1    0  power
+ * 256   128   64   32     16   8    4    2    1  (2^power value)
+ * 1     1     0     0     1    1    1    0    0  (actual given base-2 value)
+ * ----------------------------------------------
+ * 256+128+16+8+4 = 412
+ */
+var result = num5 / num4;
+
+// console.log('Result for num5/num4: ', result);
+
+// when base is not given, it will be defaulted to 10
+var resultAfterModification = parseInt(result, 10);
+console.log('Result after modification ==>', resultAfterModification)
+
+// Parsefloat() returns wholeNumber+decimal points
+var result2 = num3 / num1;
+console.log('Result for num3/num1: ', result2);
+var parseFloatResult = parseFloat(result2);
+console.log('parseFloatResult after modification ==>', parseFloatResult)
+
+// Math.floor & Math.ceil
+// console.log('Math.floor(3.2)', Math.floor(3.2));
+// console.log('Math.floor(3.6)', Math.floor(3.6));
+// console.log('Math.ceil(3.2)', Math.ceil(3.2));
+// console.log('Math.ceil(3.6)', Math.ceil(3.6));
+
+
+// console.log('Math.sqrt(4)', Math.sqrt(4));
+// console.log('Math.abs(3.6)', Math.abs(3.6));
+// console.log('Math.abs(-3.6)', Math.abs(-3.6));
+// console.log('Math.pow(2,3)', Math.pow(2,3)); // => 2 to power 3 = 8
+
+// If nothing is given, it will produce random number between 0 & 1;
+var randomNumber = Math.random();
+console.log('randomNumber: ', randomNumber);
+
+var numberBtn1And10 = Math.floor(randomNumber * 10);
+console.log('numberBtn1And10: ', numberBtn1And10);
+
+var numberBtn1And100 = Math.floor(randomNumber * 100);
+console.log('numberBtn1And100: ', numberBtn1And100);
+
+var numberBtn1And1000000 = Math.floor(randomNumber * 1000000);
+console.log('numberBtn1And1000000: ', numberBtn1And1000000);
+
+// number of ways to generate a 2-digit binary number
+/**
+ * 0 0
+ * 0 1
+ * 1 0
+ * 1 1
+ * -- total ways = 4
+ */
