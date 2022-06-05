@@ -131,3 +131,5 @@
  // console.log('eg6SplitArray =>', eg6SplitArray);
  // console.log('eg6SplitArray other way using split() =>', eg6.split('|'));
  
+
+//   Talk about == && ===
