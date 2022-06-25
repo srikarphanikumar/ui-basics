@@ -82,19 +82,92 @@ numbs.forEach(eachNum => {
 })
 console.log('productArray after: ', productArray);
 
-// Eg: 2 Sum of first 10 natural numbers;
+// Eg: 2 Sum of first 10 natural numbers
+// &&&
+// Eg-3: Product of 1st 10 natural numbers: 
+// Natural numbers: 1 to Infinity
+// Whole numbers: 0 to Infinity
+// Integers: -Infinity to +Infinity
 // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 
 let sum = 0;
+let product = 10;
 
-for (let i=1; i<=10; i++) {
+for (let i=1; i<1; i++) {
     sum = sum + i;
+    // console.log('Sum in loop: ', sum);
 }
-console.log('Sum: ', sum)
+console.log('Total Sum: ', sum)
 
-/** Homework: 
- *     +
- *    +++
- *   +++++
- *  +++++++
+
+/** WHILE LOOP */
+let index = 1;
+
+// while(index <= 0) {
+//     product = product * index;
+//     index++;
+// }
+// console.log('Total product: ', product)
+
+
+/** Do While Loop */
+/** Will run the loop even if condition is not met */
+
+let index2 = 2;
+
+do {
+    product = product * index2;
+    console.log('Hi')
+    index2++;
+} while (index2 < 1);
+
+console.log('Total product: ', product)
+
+/** CONDITIONS: if, else if, else, switch, break, continue */
+
+// Eg: Fizz Buzz using 3 & 5
+/**
+ * Print from 1 to 50;
+ * 3: Fizz
+ * 5: Buzz
+ * 15: FizzBuzz
+ * Required o/p: 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz
  */
+for (let num=1; num<=50; num++) {
+    // Using if-[else-if]-else
+    if ((num % 3 === 0) && (num % 5 === 0)) {
+        console.log('FizzBuzz');
+    } else if (num % 3 === 0) {
+        console.log('Fizz');
+    } else if (num % 5 === 0) {
+        console.log('Buzz')
+    } else {
+        console.log(num)
+    }
+}
+
+// const fruits = ['Tomato', 'Onion', 'Okra', 'Lemon', 'Biryani', 'Chicken', 'Mutton'];
+console.clear();
+let fruit = 'Tomato';
+let text = 'I like ';
+switch (fruit) {
+    case 'Tomato': 
+        text+= 'Tomato';
+        break;
+    case 'Onion': 
+        text+= 'Onion';
+        break;
+    case 'Okra': 
+        text+= 'Okra';
+        break;
+    case 'Lemon': 
+        text+= 'Lemon';
+        break;
+    case 'Biryani': 
+        text+= 'Biryani';
+        break;
+    default: 
+        text+= 'Something else';
+        break;
+}
+console.log('Text: ', text);
