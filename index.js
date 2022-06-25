@@ -16,14 +16,9 @@ console.log('******************************');
  * 7. null 
 */
 
+
 /**
  * SPECIAL CHARACTERS:
  * /t = tab
  * /n = new line
  */
-
-// Import other functions from a different file
-// import { commonAddition, commonNamePrint  } from './common-functions';
-
-// const commonAdditionResult = commonAddition(2,3);
-// console.log('commonAdditionResult: ', commonAdditionResult)

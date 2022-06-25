@@ -8,8 +8,8 @@
 //  * subtraction (3-2)
 //  * multiplication (3*2)
 //  * division:
-//  *      quotient = (3/2)
-//  *      remainder = (3%2)
+//  *      quotient = (3/2) 
+//  *      remainder = (3%2) 
 //  *
 //  * parseInt(numberToParse, baseToConvert):
 //  *      Eg: parseInt(10, 2)[BINARY], parseInt(100, 10)[DECIMAL]
@@ -307,13 +307,13 @@
 // // console.log('type of string1: ', typeof(string1));
 // // console.log('type of string2: ', typeof(string2));
 
-// const stringAddn = string1 + string2;
+// const stringAddn = string1 + string2; // Ouput: '3040'
 // // console.log('String addition result: ', stringAddn);
 // // console.log('String Addn type: ', typeof(stringAddn));
 
 // const strAsNum1 = +string1;
 // const strAsNum2 = +string2;
-// const stringAsNumAddn = strAsNum1 + strAsNum2;
+// const stringAsNumAddn = strAsNum1 + strAsNum2; // Output: 70
 
 // // console.log('strAsNum1: ', strAsNum1);
 // // console.log('strAsNum2: ', strAsNum2);
